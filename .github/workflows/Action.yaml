@@ -1,0 +1,9 @@
+name: Action workflow
+on: [push]
+jobs:
+  git-checkout:
+   runs-on: ubuntu-22.04
+   steps:
+     - name: Git git-checkout
+       run: action/checout@v3
+
