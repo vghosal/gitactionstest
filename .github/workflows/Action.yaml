@@ -6,4 +6,11 @@ jobs:
    steps:
      - name: Git git-checkout
        uses: actions/checkout@v3
+     - name: Check Direct Files
+       run: ls -a
 
+  get-directory-contents:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Check Latest Files
+       run: ls -a
