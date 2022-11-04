@@ -1,5 +1,8 @@
 name: Action workflow
-on: [pull_request]
+on: 
+  push:
+  pull_request:
+    types: [closed,assigned,opened,reopened]    
 jobs:
   git-checkout:
    runs-on: ubuntu-22.04
