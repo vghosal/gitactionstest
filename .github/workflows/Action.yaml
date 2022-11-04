@@ -19,5 +19,5 @@ jobs:
    runs-on: ubuntu-latest
    needs: ['git-checkout']
    steps:
-     - name: Check Latest Files
+     - name: Check Latest Files ls-a
        run: ls -a
