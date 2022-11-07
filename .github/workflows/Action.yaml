@@ -1,7 +1,7 @@
-name: Action workflow
+name: Action workflow repo dispatch
 on: 
   repository_dispatch:
-  push:
+  # push:
   # schedule:
   #   - cron: "*/5 * * * *"
   pull_request:
