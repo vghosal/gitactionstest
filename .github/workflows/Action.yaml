@@ -1,8 +1,9 @@
-name: Action workflow
+name: Action workflow repo dispatch
 on: 
+  repository_dispatch:
   # push:
-  schedule:
-    - cron: "* * * * *"
+  # schedule:
+  #   - cron: "*/5 * * * *"
   pull_request:
     types: [closed,assigned,opened,reopened]    
 jobs:
